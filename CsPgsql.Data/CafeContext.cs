@@ -1,20 +1,15 @@
-﻿using Microsoft.EntityFrameworkCore;
-using System.Collections.Generic;
+﻿using CsPgsql.Data.DB;
+using Microsoft.EntityFrameworkCore;
+using Microsoft.Extensions.Configuration;
 
-namespace CsPgsql.Data
+namespace CsPgsql.Data;
+
+public class CafeContext : DbContext
 {
-    public class CafeContext : DbContext
-    {
-        public DbSet<Cafe> Cafes { get; set; }
+    public DbSet<Menu> menu { get; set; }
 
-        protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
-            => optionsBuilder.UseNpgsql("Host=localhost:5432;Database=Cafe;Username=ruivilela;Password=pwd"); // Todo: upd pwd
-    }
-
-    public class Cafe
+    public CafeContext(DbContextOptions<CafeContext> options)
+        : base(options)
     {
-        public int Id { get; set; }
-        public string Name { get; set; }
-        public decimal Price { get; set; }
     }
 }
