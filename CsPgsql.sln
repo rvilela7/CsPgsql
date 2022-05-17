@@ -1,22 +1,31 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio Version 16
-VisualStudioVersion = 16.0.30114.105
+# Visual Studio Version 17
+VisualStudioVersion = 17.2.32505.173
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CsPgsql.Cafe", "CsPgsql.Cafe\CsPgsql.Cafe.csproj", "{ABE984D7-5351-4707-8D61-E0E9E581FDD8}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CsPgsql.Cafe", "CsPgsql.Cafe\CsPgsql.Cafe.csproj", "{ABE984D7-5351-4707-8D61-E0E9E581FDD8}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CsPgsql.Data", "CsPgsql.Data\CsPgsql.Data.csproj", "{D934E97B-0F44-4477-AD49-09A09E1A0927}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
-	GlobalSection(SolutionProperties) = preSolution
-		HideSolutionNode = FALSE
-	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
 		{ABE984D7-5351-4707-8D61-E0E9E581FDD8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{ABE984D7-5351-4707-8D61-E0E9E581FDD8}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{ABE984D7-5351-4707-8D61-E0E9E581FDD8}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{ABE984D7-5351-4707-8D61-E0E9E581FDD8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D934E97B-0F44-4477-AD49-09A09E1A0927}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D934E97B-0F44-4477-AD49-09A09E1A0927}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D934E97B-0F44-4477-AD49-09A09E1A0927}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D934E97B-0F44-4477-AD49-09A09E1A0927}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {37AAEABE-C643-48C9-AEC4-6E4ACCA13A2A}
 	EndGlobalSection
 EndGlobal
