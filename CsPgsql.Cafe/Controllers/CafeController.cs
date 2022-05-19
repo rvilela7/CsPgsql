@@ -19,7 +19,7 @@ public class CafeController : ControllerBase
     [HttpGet]
     public async Task<IActionResult> Get()
     {
-        var result = _context.menu.ToList();
-        return Ok(result);
+        //var result = _context.menu.ToList();
+        return Ok("Alive");
     }
 }
