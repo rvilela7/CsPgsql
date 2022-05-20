@@ -14,22 +14,23 @@ public class Program
         builder.Services.AddEndpointsApiExplorer();
         builder.Services.AddSwaggerGen();
 
-        //var conString = builder.Configuration.GetConnectionString("CafePgSQL"); //Prod?
-        var conString = builder.Configuration["ConnectionString:CafePgSQL"]; //user-secret
+        // var conString = builder.Configuration.GetConnectionString("fromAppSettings")
+        var conString = "conString";
+        // var conString = builder.Configuration["ConnectionString:CafePgSQL"];
 
         builder.Services.AddDbContext<CafeContext>(options =>
-            options.UseNpgsql(conString));
+             options.UseNpgsql(conString));
 
         var app = builder.Build();
 
         // Configure the HTTP request pipeline.
-        // if (app.Environment.IsDevelopment())
-        // {
+        if (app.Environment.IsDevelopment() || app.Environment.IsProduction())
+        {
             app.UseSwagger();
             app.UseSwaggerUI();
-        // }
+        }
 
-        app.UseHttpsRedirection();
+        // app.UseHttpsRedirection();
         app.UseAuthorization();
         app.MapControllers();
         app.Run();

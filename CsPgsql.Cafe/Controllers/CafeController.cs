@@ -20,6 +20,8 @@ public class CafeController : ControllerBase
     public async Task<IActionResult> Get()
     {
         //var result = _context.menu.ToList();
+        _logger.LogInformation("Alive");
+
         return Ok("Alive");
     }
 }
