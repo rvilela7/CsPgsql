@@ -7,7 +7,7 @@
 
 # Docker
 
-0.1. `dotnet publish -c Release`
+0.1. `dotnet publish -c Release` (from dockerFile)
 1. `docker build -t cspgsql -f Dockerfile .`
 2. `docker create -p 8080:80 --name cspgsql-container cspgsql`
 

@@ -19,8 +19,9 @@ public class CafeController : ControllerBase
     [HttpGet]
     public async Task<IActionResult> Get()
     {
-        //var result = _context.menu.ToList();
-        _logger.LogInformation("Alive");
+        _logger.LogInformation("Cafe-DB");
+        var result = _context.menu.ToList();
+        _logger.LogInformation("Cafe-End");
 
         return Ok("Alive");
     }
