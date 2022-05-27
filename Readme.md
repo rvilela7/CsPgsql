@@ -19,3 +19,4 @@
 1. `docker swarm init`
 2. `docker secret init`
 3. `echo "cenas" | docker secret create key1 -`
+
